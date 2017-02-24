@@ -4,8 +4,6 @@ from bs4 import BeautifulSoup
 from twilio.rest import TwilioRestClient
 from Token import ACCSID,AUTH_TOKEN
 
-
-
 class PriceChangeNot:
     def __init__(self,url):
         self.URL = url
@@ -35,7 +33,7 @@ class PriceChangeNot:
 
     def UserNotification(self,price,name):
         client = TwilioRestClient(ACCSID,AUTH_TOKEN)
-        client.messages.create(to_="+13126473207", from_="+18722405791", body=price + name)
+        client.messages.create(to_="+13126473207", from_="Twilio API NUMBER", body=price + name)
 
 
 URL = "https://www.macys.com/shop/product/calvin-klein-mens-minneapolis-overcoat?ID=2891313&CategoryID=3763&tdp=cm_app~zMCOM-NAVAPP~xcm_zone~zPDP_ZONE_A~xcm_choiceId~zcidM05RRM-a1f11e94-4fff-4cce-9ac2-7de75506cda1%40H7%40customers%2Balso%2Bshopped%243763%242891313~xcm_pos~zPos3"
