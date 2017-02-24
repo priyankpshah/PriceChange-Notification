@@ -1,2 +1,4 @@
-ACCSID = "ACfcb82cbed02261184d282f79c1a53e63"
-AUTH_TOKEN = "b09c1e7779d96efd66f6de4072e3199f"
+//Access Twilio and Create you own account
+
+ACCSID = ""
+AUTH_TOKEN = ""
